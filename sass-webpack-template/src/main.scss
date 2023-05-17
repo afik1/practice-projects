@@ -1,0 +1,43 @@
+// Creating variables
+$border-color: blue;
+$header-color: teal;
+
+// Creating mixins
+@mixin flex-center($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+// Creating a function
+@function calcHeight($first-value, $second-value) {
+  @return $first-value + $second-value;
+}
+
+// Creating a extendable
+%margin-center {
+  margin: auto auto auto auto;
+}
+
+.container {
+  @include flex-center(column);
+  width: 80vw + 10vw; // 90vw created with operators
+  height: calcHeight(80vh, 10vh); // 90vh created with a function
+  @if $border-color = blue {
+    border: $border-color solid 10px;
+  } @else {
+    border: $border-color solid 5px;
+  }
+  @extend %margin-center;
+}
+
+.header {
+  color: $header-color;
+  font-size: 1rem;
+}
+
+.sub-header {
+  color: lightblue;
+  font-size: 0.7rem;
+}
