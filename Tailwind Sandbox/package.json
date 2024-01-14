@@ -1,0 +1,14 @@
+{
+  "name": "tailwind-sandbox",
+  "version": "1.0.0",
+  "description": "This project will be used as a testing ground for the tailwind css library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
