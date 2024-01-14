@@ -11,10 +11,15 @@
 
 .header {
   color: teal;
-  font-size: 1rem;
+  font-size: 3rem;
 }
 
 .sub-header {
   color: lightblue;
-  font-size: 0.7rem;
+  font-size: 2rem;
+}
+
+.bullet-point {
+  color: lightskyblue;
+  font-size: 1rem;
 }
